@@ -30,12 +30,16 @@ const Avaliações = () => {
 
     return (
         <div className="p-8 text-center">
-            <h1 className="text-white lg:text-6xl md: text-4xl font-bold"  style={{ fontFamily: 'Bebas Neue, serif' }}>
-                VEJA O QUE FALAM DE NÓS!!
-            </h1>
+           <h1
+                    id="profissionais"
+                    style={{ fontFamily: 'Bebas Neue, serif' }}
+                    className="text-[#fff] lg:text-7xl md: text-6xl"
+                >
+                    VEJA O QUE FALAM DE NÓS!
+                </h1>
 
 
-            <div className="flex justify-center mt-4">
+            <div className="flex justify-center mt-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
                     {listaAvaliacoes.slice(startIndex, startIndex + cardsPorPagina).map((item) => (
                         <div

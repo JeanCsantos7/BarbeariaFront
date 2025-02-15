@@ -29,26 +29,26 @@ const ListaProfissionais = () => {
     };
 
     return (
-        <div className="flex flex-col items-center gap-6 bg-[#444444] p-6">
+        <div className="flex flex-col items-center gap-6 bg-[#444444]  p-6">
             <h1
                 id="profissionais"
                 style={{ fontFamily: 'Bebas Neue, serif' }}
-                className="text-[#fff] text-center text-6xl md:text-6xl lg:text-7xl"
+                className="text-[#fff] text-center text-6xl md:text-6xl mt-[3%] lg:text-7xl "
             >
                 NOSSOS PROFISSIONAIS
             </h1>
 
-            {/* Modal customizado */}
+         
             {openModal && (
                 <div 
-                    className="fixed inset-0 bg-black/50 flex justify-center items-center z-50"
+                    className="fixed inset-0 bg-black/60 flex justify-center z-50 items-center p-[6%]  "
                     onClick={() => setOpenModal(false)}
                 >
                     <div 
-                        className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative"
+                        className="bg-white p-5  rounded-lg shadow-lg max-w-md w-full relative  "
                         onClick={(e) => e.stopPropagation()}
                     >
-                        {/* Cabeçalho do modal */}
+                    
                         <div className="flex justify-between items-center border-b pb-3">
                             <h2 className="text-xl font-semibold">Trabalhos Realizados</h2>
                             <FaTimes 
@@ -58,7 +58,7 @@ const ListaProfissionais = () => {
                             />
                         </div>
 
-                        {/* Conteúdo do modal */}
+            
                         <div className="space-y-6 mt-4">
                             {renderizar || "Nenhum trabalho disponível."}
                         </div>
@@ -66,7 +66,7 @@ const ListaProfissionais = () => {
                 </div>
             )}
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-[1200px]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-[6.5%]  gap-6 w-full max-w-[1200px] mt-[5%]">
                 {Profissionais.map(item => (
                     <div key={item.id} className="w-full">
                         <img

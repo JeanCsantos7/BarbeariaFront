@@ -1,11 +1,11 @@
 import Slider from "react-slick";
 
-import Corte1 from '../assets/Corte1.jpeg';
-import Corte2 from '../assets/Corte2.jpeg';
-import Corte3 from '../assets/Corte3.jpeg';
-import Corte4 from '../assets/Corte4.jpeg';
-import Corte5 from '../assets/Corte5.jpeg';
-import Corte6 from '../assets/Corte6.jpeg';
+import Corte1 from '../assets/IMG_7652.jpeg';
+import Corte2 from '../assets/IMG_7832.jpeg';
+import Corte3 from '../assets/IMG_8042.jpeg';
+import Corte4 from '../assets/IMG_8185.jpeg';
+import Corte5 from '../assets/IMG_8212.jpeg';
+import Corte6 from '../assets/Corte1.jpeg';
 
 interface ImagensBarbearia {
     id: number;
@@ -33,12 +33,12 @@ export default function SliderCarrosel() {
     };
 
     return (
-      <div className="flex justify-center items-center w-full mt-[3%] mb-[9%]">
-        <Slider {...settings} className="lg:max-w-[20vw] md: max-w-[85vw] w-full">
+      <div className="flex justify-center items-center w-full mt-[2.5%] mb-[9%]">
+        <Slider {...settings} className="lg:max-w-[20vw] md: max-w-[85vw] w-full ">
           {listaImagens.map(item => (
             <div key={item.id} className="flex justify-center items-center">
               <img
-                className="w-full  object-cover rounded-2xl transition-opacity duration-500 hover:opacity-80 "
+                className="w-full  object-cover rounded-2xl transition-opacity duration-500 hover:opacity-80 mt-[7%] "
                 src={item.imagem}
                 alt={`Imagem ${item.id}`}
               />

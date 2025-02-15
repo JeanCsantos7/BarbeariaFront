@@ -26,21 +26,21 @@ const TrabalhosDuh = () => {
 
     let settings = {
         dots: true, 
-        speed: 200, 
+        speed: 450, 
         slidesToShow: 1, 
         slidesToScroll: 1, 
         autoplay: true, 
-        autoplaySpeed: 3500, 
+        autoplaySpeed: 3000, 
         arrows: true, 
       };
 
 
     return (
         <>
-           <div className="flex justify-center items-center w-full mt-[3%] mb-[9%]">
-        <Slider {...settings} className="lg:max-w-[20vw] md: max-w-[85vw] w-full">
+           <div className="flex justify-center items-center w-full mt-[3%] mb-[9%] ">
+        <Slider {...settings} className="lg:max-w-[20vw] md: max-w-[85vw] w-full  ">
           {listaImagens.map(item => (
-            <div key={item.id} className="flex justify-center items-center">
+            <div key={item.id} className="flex justify-center items-center ">
               <img
                 className="w-full  object-cover rounded-2xl transition-opacity duration-500 hover:opacity-80 "
                 src={item.imagem}

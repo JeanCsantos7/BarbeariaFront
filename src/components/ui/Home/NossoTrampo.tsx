@@ -18,7 +18,7 @@ const NossoTrampo = () => {
                 Conheça um pouco mais de nosso trabalho
             </h2>
           
-            <div className="flex justify-center items-center w-full">
+            <div className="flex justify-center items-center w-full mt-[2%]">
               <SliderCarrosel/>
             </div>
         </>
